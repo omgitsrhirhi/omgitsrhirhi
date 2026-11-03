@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>omgitsrhirhi — streamer, creator & professional wanderer</title>
+  <meta name="description" content="omgitsrhirhi (Rhiannon) — Canadian streamer and digital creator. Media kit, socials, partnerships and shop. It won't be boring.">
+  <meta property="og:title" content="omgitsrhirhi">
+  <meta property="og:description" content="i don't know where i'm going from here, but i can promise it won't be boring.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omgitsrhirhi.com/">
+  <meta property="og:image" content="https://omgitsrhirhi.com/assets/rhirhi.jpg">
+  <meta name="theme-color" content="#F6EFE4">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top">omgitsrhirhi<span class="brand-dot">✺</span></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#media-kit">Media kit</a>
+    <a href="#links">Links</a>
+    <a href="#partners">Partners</a>
+    <a href="#shop">Shop</a>
+    <a class="nav-cta" href="#contact">Work with me</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="sun" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="38"/>
+      <g class="rays"></g>
+    </svg>
+    <div class="hero-text">
+      <p class="eyebrow"><i class="fa-solid fa-location-dot"></i> <span data-bind="location"></span></p>
+      <h1>omg<em>its</em>rhirhi</h1>
+      <p class="tagline" data-bind="tagline"></p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#media-kit">View media kit</a>
+        <a class="btn btn-ghost" href="#links">Find me online</a>
+      </div>
+      <p class="handnote">streamer · creator · side-quest enthusiast ↘</p>
+    </div>
+    <div class="hero-photo">
+      <div class="arch">
+        <img data-photo alt="Rhiannon, aka omgitsrhirhi">
+        <div class="arch-fallback" aria-hidden="true">
+          <svg viewBox="0 0 200 260"><path d="M20 260V120a80 80 0 0 1 160 0v140" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="120" r="26"/><path d="M30 230c30-40 50-40 70-10s45 25 70-15" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span>add your photo<br>assets/rhirhi.jpg</span>
+        </div>
+      </div>
+      <div class="stamp-badge"><span>it won't be<br><strong>boring</strong></span></div>
+    </div>
+    <svg class="route" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 C 200 10, 380 120, 600 60 S 1000 10, 1200 70"/></svg>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="section-head">
+      <p class="kicker">01 — about me</p>
+      <h2>Hi, I'm <em>rhirhi</em>.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy" data-list="about"></div>
+      <ul class="facts" data-list="aboutFacts"></ul>
+    </div>
+  </section>
+
+  <!-- MEDIA KIT -->
+  <section class="section kit" id="media-kit">
+    <div class="section-head">
+      <p class="kicker">02 — media kit</p>
+      <h2>Let's go <em>somewhere</em> together.</h2>
+      <p class="lede">For brands, partners and collaborators. Numbers updated <span data-bind="statsUpdated"></span>.</p>
+    </div>
+
+    <div class="kit-card">
+      <div class="kit-intro">
+        <div class="kit-id">
+          <div class="kit-avatar"><img data-photo alt=""><span>rr</span></div>
+          <div>
+            <h3>omgitsrhirhi</h3>
+            <p class="muted"><i class="fa-solid fa-location-dot"></i> <span data-bind="location"></span></p>
+          </div>
+        </div>
+        <ul class="tags" data-list="tags"></ul>
+        <p data-bind="kitBio"></p>
+      </div>
+
+      <div class="kit-total" data-total hidden>
+        <span class="muted">Total audience</span>
+        <strong data-total-value></strong>
+      </div>
+
+      <div class="platforms" data-list="platforms"></div>
+
+      <div class="audience" data-audience hidden>
+        <h4>Audience</h4>
+        <div class="audience-grid"></div>
+      </div>
+
+      <div class="kit-cols">
+        <div>
+          <h4>Content pillars</h4>
+          <ul class="pillars" data-list="pillars"></ul>
+        </div>
+        <div>
+          <h4>Ways to work together</h4>
+          <ul class="services" data-list="services"></ul>
+          <p class="rates" data-bind="ratesNote"></p>
+        </div>
+      </div>
+
+      <div class="kit-partners">
+        <h4>Current partners & affiliates</h4>
+        <ul class="logo-row" data-list="partnerNames"></ul>
+      </div>
+
+      <div class="kit-actions">
+        <a class="btn btn-solid" data-mail>Email me</a>
+        <button class="btn btn-ghost" data-print><i class="fa-solid fa-download"></i> Save media kit as PDF</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINKS -->
+  <section class="section links" id="links">
+    <div class="section-head">
+      <p class="kicker">03 — find me</p>
+      <h2>All my <em>corners</em> of the internet.</h2>
+    </div>
+    <div class="featured" data-list="featuredLinks"></div>
+    <div class="social-grid" data-list="socials"></div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="section partners" id="partners">
+    <div class="section-head">
+      <p class="kicker">04 — partners & affiliates</p>
+      <h2>Things I actually <em>use</em>.</h2>
+      <p class="lede">Some of these are affiliate or referral links — if you use them, I may earn a small commission or reward at no extra cost to you. Thank you for supporting the journey!</p>
+    </div>
+    <div data-list="partnerGroups"></div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="section shop" id="shop">
+    <div class="section-head">
+      <p class="kicker">05 — the shop</p>
+      <h2>Souvenirs <em>from the road</em>.</h2>
+    </div>
+    <div class="shop-grid" data-list="shop"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="postcard">
+      <div class="postcard-left">
+        <p class="kicker">06 — say hello</p>
+        <h2>Got an idea? <em>Let's make it weird</em> (in a good way).</h2>
+        <p>Brand partnerships, sponsored content, collabs or design work — drop me a line and I'll get back to you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" data-mail><i class="fa-regular fa-envelope"></i> <span data-bind="email"></span></a>
+          <a class="btn btn-ghost" href="https://ko-fi.com/omgitsrhirhi" target="_blank" rel="noopener">Hire me on Ko-fi</a>
+        </div>
+      </div>
+      <div class="postcard-right" aria-hidden="true">
+        <div class="post-stamp">✺<small>CAN</small></div>
+        <div class="post-lines"><span></span><span></span><span></span></div>
+        <p class="handnote">wish you were here — rr</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="footer-brand">omgitsrhirhi<span class="brand-dot">✺</span></p>
+  <div class="footer-socials" data-list="footerSocials"></div>
+  <p class="muted small">© <span data-year></span> omgitsrhirhi. Made somewhere between here and there.</p>
+</footer>
+
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
