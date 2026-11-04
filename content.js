@@ -20,8 +20,8 @@ window.SITE = {
   about: [
     "Hey, I'm Rhi — but the internet knows me as rhirhi. I'm a Canadian streamer, digital creator and professional rabbit-hole explorer.",
     "On Twitch I keep things cozy and chaotic in equal measure: games, good music and a community that feels like a group chat with your favourite people. Off stream, you can find me running multiple side projects, hitting up raves around the globe, and I design digital goods for other creators.",
-    "I've never been great at staying in one lane. Gaming, music, nostalgia, money-saving hacks, side quests of every kind — if it's interesting, I'm probably trying it. You're invited along for the ride!"
-     "I don't know where I'm going from here, but I can promise you it won't be boring!"
+    "I've never been great at staying in one lane. Gaming, music, nostalgia, money-saving hacks, side quests of every kind — if it's interesting, I'm probably trying it. You're invited along for the ride!",
+    "I don't know where I'm going from here, but I can promise you it won't be boring!"
   ],
   aboutFacts: [
     { label: "Based in", value: "Ontario, Canada" },
@@ -33,12 +33,12 @@ window.SITE = {
   /* ---------- SOCIALS ----------
      followers / avgViews: type a number like "12.4K" — leave null to hide. */
   socials: [
-    { platform: "Twitch",    icon: "fa-brands fa-twitch",    url: "https://twitch.tv/omgitsrhirhi",          handle: "@omgitsrhirhi", followers: 2200+, avgViews: null, primary: true },
-    { platform: "TikTok",    icon: "fa-brands fa-tiktok",    url: "https://tiktok.com/@omgitsrhirhi",        handle: "@omgitsrhirhi", followers: 250+, avgViews: null },
-    { platform: "Instagram", icon: "fa-brands fa-instagram", url: "https://instagram.com/omgitsrhirhi",      handle: "@omgitsrhirhi", followers: 860+, avgViews: null },
-    { platform: "YouTube",   icon: "fa-brands fa-youtube",   url: "https://www.youtube.com/@omgitsrhirhi",   handle: "@omgitsrhirhi", followers: 450+, avgViews: null },
-    { platform: "X",         icon: "fa-brands fa-x-twitter", url: "https://twitter.com/omgitsrhirhi",        handle: "@omgitsrhirhi", followers: 500+, avgViews: null },
-    { platform: "Facebook",  icon: "fa-brands fa-facebook-f",url: "https://facebook.com/omgitsrhirhi",       handle: "omgitsrhirhi",  followers: 250+, avgViews: null }
+    { platform: "Twitch",    icon: "fa-brands fa-twitch",    url: "https://twitch.tv/omgitsrhirhi",          handle: "@omgitsrhirhi", followers: "2,200+", avgViews: null, primary: true },
+    { platform: "TikTok",    icon: "fa-brands fa-tiktok",    url: "https://tiktok.com/@omgitsrhirhi",        handle: "@omgitsrhirhi", followers: "250+", avgViews: null },
+    { platform: "Instagram", icon: "fa-brands fa-instagram", url: "https://instagram.com/omgitsrhirhi",      handle: "@omgitsrhirhi", followers: "860+", avgViews: null },
+    { platform: "YouTube",   icon: "fa-brands fa-youtube",   url: "https://www.youtube.com/@omgitsrhirhi",   handle: "@omgitsrhirhi", followers: "450+", avgViews: null },
+    { platform: "X",         icon: "fa-brands fa-x-twitter", url: "https://twitter.com/omgitsrhirhi",        handle: "@omgitsrhirhi", followers: "500+", avgViews: null },
+    { platform: "Facebook",  icon: "fa-brands fa-facebook-f",url: "https://facebook.com/omgitsrhirhi",       handle: "omgitsrhirhi",  followers: "250+", avgViews: null }
   ],
 
   // Big link buttons in the Links section

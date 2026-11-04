@@ -95,7 +95,7 @@
   const total = (S.socials || []).reduce((t, s) => t + toNum(s.followers), 0);
   if (total > 0) {
     const fmt = total >= 1e6 ? (total / 1e6).toFixed(1) + "M" : total >= 1e3 ? (total / 1e3).toFixed(1).replace(/\.0$/, "") + "K" : String(total);
-    $("[data-total-value]").textContent = fmt;
+    $("[data-total-value]").textContent = fmt + ((S.socials || []).some((s) => String(s.followers || "").includes("+")) ? "+" : "");
     $("[data-total]").hidden = false;
   }
 
