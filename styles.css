@@ -131,6 +131,27 @@ h4 { font-family: var(--sans); font-size: .78rem; text-transform: uppercase; let
 .facts span { color: var(--muted); font-size: .9rem; }
 .facts strong { font-weight: 500; text-align: right; }
 
+/* Projects */
+.project-list { display: grid; gap: 2rem; }
+.project { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; background: var(--paper); border: 1px solid var(--line); border-radius: 28px; padding: clamp(1rem, 3vw, 1.6rem); box-shadow: var(--shadow); }
+.project:nth-child(even) .project-visual { order: 2; }
+.project-visual { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden; text-decoration: none; background: linear-gradient(150deg, var(--olive), var(--sage) 55%, var(--mustard)); }
+.project-visual img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.project-visual:hover img { transform: scale(1.04); }
+.project-mono { font-family: var(--serif); font-style: italic; font-size: clamp(2rem, 5vw, 3.2rem); color: var(--cream); text-align: center; padding: 1rem; }
+.project-visual.no-img::before { content: ""; position: absolute; width: 70%; aspect-ratio: 1; border-radius: 50%; border: 1.5px dashed rgba(246,239,228,.55); }
+.project-num { position: absolute; top: 1rem; left: 1.1rem; font-family: var(--hand); font-size: 1.6rem; color: var(--cream); }
+.project-body { display: grid; gap: .9rem; justify-items: start; padding: .5rem clamp(0rem, 2vw, 1rem) .5rem 0; }
+.project-body h3 { font-size: clamp(2rem, 4vw, 2.6rem); }
+.project-body p { margin: 0; }
+.project-tagline { font-family: var(--hand); font-size: 1.5rem; color: var(--clay); margin-top: -.4rem !important; }
+.project-status { font-size: .74rem; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: var(--olive); background: rgba(140,155,124,.2); padding: .3em .8em; border-radius: 999px; }
+@media (max-width: 900px) {
+  .project { grid-template-columns: 1fr; }
+  .project:nth-child(even) .project-visual { order: 0; }
+  .project-body { padding: 0 .4rem .6rem; }
+}
+
 /* Media kit */
 .kit-card { background: var(--paper); border-radius: 28px; border: 1px solid var(--line); box-shadow: var(--shadow); padding: clamp(1.4rem, 4vw, 3rem); display: grid; gap: 2.6rem; }
 .kit-intro { display: grid; gap: 1.2rem; max-width: 760px; }

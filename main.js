@@ -37,6 +37,21 @@
         ${s.followers ? `<span class="p-stat"><strong>${esc(s.followers)}</strong> followers</span>` : ""}
         ${s.avgViews ? `<span class="p-stat"><strong>${esc(s.avgViews)}</strong> avg. views</span>` : ""}
       </a>`).join(""),
+    projects: (d) => d.map((p, i) => `
+      <article class="project">
+        <a class="project-visual${p.image ? "" : " no-img"}" ${ext(p.url)} aria-label="${esc(p.name)}">
+          ${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="project-mono">${esc(p.name)}</span>`}
+          <span class="project-num">${String(i + 1).padStart(2, "0")}</span>
+        </a>
+        <div class="project-body">
+          ${p.status ? `<span class="project-status">${esc(p.status)}</span>` : ""}
+          <h3>${esc(p.name)}</h3>
+          ${p.tagline ? `<p class="project-tagline">${esc(p.tagline)}</p>` : ""}
+          <p>${esc(p.description)}</p>
+          ${(p.tags || []).length ? `<ul class="tags">${p.tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
+          ${p.url ? `<a class="btn btn-solid" ${ext(p.url)}>${esc(p.linkText || "Take a look")} <i class="fa-solid fa-arrow-right"></i></a>` : ""}
+        </div>
+      </article>`).join(""),
     pillars: (d) => d.map((p) => `<li><i class="${esc(p.icon)}"></i><div><strong>${esc(p.title)}</strong><span>${esc(p.text)}</span></div></li>`).join(""),
     services: (d) => d.map((s) => `<li><strong>${esc(s.title)}</strong><span>${esc(s.text)}</span></li>`).join(""),
     partnerNames: () => (S.partnerGroups || []).flatMap((g) => g.items)

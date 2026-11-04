@@ -107,6 +107,23 @@ window.SITE = {
     }
   ],
 
+  /* ---------- PROJECTS (portfolio) ----------
+     Things you've built. Newest/biggest first. Fields:
+     name, tagline, description, url, linkText, image (optional, e.g. "assets/projects/rewind.jpg"),
+     status (e.g. "Live", "In progress", "Coming soon"), tags: ["..."] */
+  projects: [
+    {
+      name: "Rewind Magic",
+      tagline: "Bring back the magic",
+      description: "A free, Canadian- and female-run hub of 90s/2000s-style services that bring back the affordability we grew up with. It starts with RewindMagicTV, a cable-style classic-TV streaming service built from rights-checked public domain shows and movies, with more free services on the way.",
+      url: "https://rewindmagic.ca",
+      linkText: "Visit rewindmagic.ca",
+      image: null,
+      status: "Live",
+      tags: ["Founder", "Web app", "Streaming", "Nostalgia"]
+    }
+  ],
+
   /* ---------- SHOP ----------
      Add items when you're ready. Example:
      { name: "Cosmic Forest Tee", price: "$32 CAD", image: "assets/shop/tee.jpg", url: "https://...", tag: "New" }
